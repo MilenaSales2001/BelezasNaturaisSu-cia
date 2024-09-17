@@ -1,0 +1,516 @@
+/* Resetando alguns estilos padrão */
+body, h1, h2, p, ul, li, iframe {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo geral da página */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #ddf1f1; /* Cor de fundo mais clara e suave */
+    color: #333;
+    padding-top: 80px; /* Reduzido para ajustar ao cabeçalho menor */
+}
+
+/* Estilo do header */
+header {
+    background: #050607; /* Cor de fundo para o header (cor da bandeira da Suécia) */
+    color: #ffffff;
+    padding: 0.4em 0; /* Reduzido para diminuir a altura do cabeçalho */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2); /* Sombra ajustada para profundidade */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header h1 {
+    font-size: 2em; /* Reduzido para ajustar ao cabeçalho menor */
+    margin: 0.4em 0; /* Margens ajustadas para o título */
+    text-shadow: 1.5px 1.5px 3px rgba(0, 0, 0, 0.5); /* Sombra do texto ajustada */
+}
+
+nav {
+    margin-top: 0.6em; /* Reduzido para ajuste no espaçamento entre o título e os botões */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 0.4em; /* Margem reduzida para botões */
+}
+
+.nav-button {
+    color: #fff;
+    background-color: #0059b8; /* Cor de fundo dos botões */
+    text-decoration: none;
+    padding: 0.4em 1.2em; /* Reduzido para ajustar o tamanho dos botões */
+    border-radius: 20px; /* Bordas mais arredondadas */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-size: 0.9em; /* Tamanho da fonte ajustado */
+}
+
+.nav-button:hover {
+    background-color: #003d80; /* Cor mais escura ao passar o mouse */
+    transform: scale(1.03); /* Leve aumento ao passar o mouse */
+}
+
+/* Estilo do main */
+main {
+    padding: 2em;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo das seções */
+section {
+    margin-bottom: 2em;
+    padding: 1em;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo do título da seção */
+section h1 {
+    font-size: 2.2em; /* Ajustado para melhor visualização */
+    color: #007bff; /* Cor dos títulos principais */
+    margin: 2em 0 0.5em; /* Margem ajustada para espaçamento */
+    border-bottom: 2px solid #007bff; /* Linha abaixo dos títulos */
+    padding-bottom: 0.5em;
+    text-align: center; /* Centraliza o título */
+}
+
+section h2 {
+    font-size: 2em; /* Ajustado para melhor visualização */
+    color: #007bff; /* Cor dos subtítulos */
+    margin: 1.5em 0 0.5em; /* Margem ajustada para espaçamento */
+    border-bottom: 2px solid #007bff; /* Linha abaixo dos subtítulos */
+    padding-bottom: 0.5em;
+    text-align: center; /* Centraliza o subtítulo */
+}
+
+section h3 {
+    font-size: 1.6em; /* Ajustado para melhor visualização */
+    color: #007bff; /* Cor dos subtítulos menores */
+    margin: 1em 0 0.5em; /* Margem ajustada para espaçamento */
+    text-align: center; /* Centraliza o subtítulo */
+}
+
+/* Estilo dos parágrafos */
+section p {
+    margin-bottom: 1.5em;
+    font-size: 1.2em; /* Aumenta o tamanho da fonte do texto */
+    line-height: 1.8; /* Melhora a legibilidade */
+    text-align: center; /* Centraliza o texto */
+    padding: 0 1em; /* Adiciona margem interna para evitar que o texto encoste nas bordas */
+}
+
+/* Estilo das imagens */
+section img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1em auto; /* Espaçamento em cima e embaixo da imagem */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para profundidade */
+}
+
+/* Estilo do iframe */
+section iframe {
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para profundidade */
+}
+
+/* Estilo do footer */
+footer {
+    background: #7ab4ff;
+    color: #000000;
+    text-align: center;
+    padding: 1em 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 2em;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2); /* Sombra para profundidade */
+}
+
+/* Adicionando um efeito suave para a rolagem */
+html {
+    scroll-behavior: smooth;
+}
+
+
+/*PAGINA DE BELEZAS NATURAIS
+
+/* Resetando alguns estilos padrão */
+body, h1, h2, h3, h4, h5, h6, p, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo geral da página */
+body {
+    font-family: 'Arial', sans-serif; /* Define a fonte Arial para todo o corpo */
+    line-height: 2.0;
+    background-color: #d2dddd; /* Cor de fundo mais clara e suave */
+    color: #000000;
+    padding-top: 150px; /* Espaço suficiente para o header fixo */
+    text-align: center; /* Centraliza o texto em todo o corpo */
+}
+
+/* Estilo do header */
+header {
+    background: #7abaff; /* Cor de fundo para o header (cor da bandeira da Suécia) */
+    color: #ffffff;
+    padding: 0.6em 0; /* Espaço interno ajustado */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para profundidade */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header h1 {
+    font-size: 2.5em; /* Tamanho da fonte ajustado */
+    margin: 0.5em 0; /* Margens ajustadas para o título */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra do texto para destaque */
+}
+
+/* Estilo da navegação */
+nav {
+    margin-top: 1em; /* Espaço entre o título e os botões */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 0.6em;
+}
+
+.nav-button {
+    color: #fff;
+    background-color: #0059b8; /* Cor de fundo dos botões */
+    text-decoration: none;
+    padding: 0.5em 1.5em; /* Ajuste do padding para botões proporcionais */
+    border-radius: 25px; /* Bordas mais arredondadas */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-size: 1em; /* Tamanho da fonte ajustado */
+}
+
+.nav-button:hover {
+    background-color: #003d80; /* Cor mais escura ao passar o mouse */
+    transform: scale(1.05); /* Leve aumento ao passar o mouse */
+}
+
+/* Estilo do main */
+main {
+    padding: 2em;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo das seções */
+section {
+    margin-bottom: 2em;
+    padding: 1em;
+    background: #fafafa;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo do título da seção */
+section h2 {
+    font-size: 2.5em;
+    color: #007bff; /* Cor dos subtítulos */
+    margin: 3em 0 1em; /* Maior margem superior para espaçar do cabeçalho */
+    border-bottom: 2px solid #007bff; /* Linha abaixo dos subtítulos */
+    padding-bottom: 0.5em;
+    text-align: center; /* Centraliza o subtítulo */
+}
+
+/* Estilo dos títulos dos artigos */
+article h3, article h4, article h5, article h6 {
+    font-size: 2em; /* Define o tamanho da fonte dos títulos dos artigos */
+    color: #007bff; /* Cor dos títulos */
+    margin: 1.5em 0; /* Margem acima e abaixo dos títulos */
+    text-align: center; /* Centraliza os títulos dos artigos */
+}
+
+/* Estilo dos parágrafos */
+section p {
+    margin-bottom: 1.5em;
+    font-size: 1.2em; /* Aumenta o tamanho da fonte do texto */
+    line-height: 1.8; /* Melhora a legibilidade */
+    text-align: center; /* Centraliza o texto */
+    padding: 0 1em; /* Adiciona margem interna para evitar que o texto encoste nas bordas */
+}
+
+/* Estilo das imagens dentro das seções */
+section img {
+    width: 100%; /* Ajusta a largura da imagem para 100% do contêiner */
+    max-width: 600px; /* Define uma largura máxima fixa para todas as imagens */
+    height: auto; /* Mantém a proporção da imagem */
+    display: block;
+    margin: 1.5em auto; /* Espaçamento em cima e embaixo da imagem e centraliza */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para profundidade */
+}
+
+/* Estilo específico para a imagem dos Lagos de Vuomajåhka */
+img[src="/assets/imagens/Lagos de VuomajåhkK.webp"] {
+    width: 100%; /* Ajusta a largura da imagem para 100% do contêiner */
+    max-width: 600px; /* Define uma largura máxima fixa */
+    height: auto; /* Mantém a proporção da imagem */
+    margin: 2em auto; /* Centraliza a imagem e adiciona mais espaço acima e abaixo */
+}
+
+/* Estilo do footer */
+footer {
+    background: #7ab4ff;
+    color: #000000;
+    text-align: center;
+    padding: 1em 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 2em;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2); /* Sombra para profundidade */
+}
+
+/* Adicionando um efeito suave para a rolagem */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Pagina de informaçoes adicionais
+
+/* Resetando alguns estilos padrão */
+body, h1, h2, h3, p, ul, li, iframe {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo geral da página */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #d2dddd; /* Cor de fundo mais clara e suave */
+    color: #333;
+    padding-top: 120px; /* Espaço suficiente para o header fixo */
+}
+
+/* Estilo do header */
+header {
+    background: #7abaff; /* Cor de fundo para o header (cor da bandeira da Suécia) */
+    color: #ffffff;
+    padding: 0.6em 0; /* Espaço interno ajustado */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para profundidade */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5em; /* Tamanho da fonte ajustado */
+    margin: 0.5em 0; /* Margens ajustadas para o título */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra do texto para destaque */
+}
+
+nav {
+    margin-top: 1em; /* Espaço entre o título e os botões */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 0.6em;
+}
+
+.nav-button {
+    color: #fff;
+    background-color: #0059b8; /* Cor de fundo dos botões */
+    text-decoration: none;
+    padding: 0.5em 1.5em; /* Ajuste do padding para botões proporcionais */
+    border-radius: 25px; /* Bordas mais arredondadas */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-size: 1em; /* Tamanho da fonte ajustado */
+}
+
+.nav-button:hover {
+    background-color: #003d80; /* Cor mais escura ao passar o mouse */
+    transform: scale(1.05); /* Leve aumento ao passar o mouse */
+}
+
+/* Estilo do main */
+main {
+    padding: 2em;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo das seções */
+section {
+    margin-bottom: 2em;
+    padding: 1em;
+    background: #fafafa;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo do título da seção */
+section h1 {
+    font-size: 2.5em;
+    color: #007bff; /* Cor dos títulos principais */
+    margin: 3em 0 1em; /* Margem ajustada para espaçamento */
+    border-bottom: 2px solid #007bff; /* Linha abaixo dos títulos */
+    padding-bottom: 0.5em;
+    text-align: center; /* Centraliza o título */
+}
+
+section h2 {
+    font-size: 2.2em;
+    color: #007bff; /* Cor dos subtítulos */
+    margin: 2em 0 1em; /* Margem ajustada para espaçamento */
+    border-bottom: 2px solid #007bff; /* Linha abaixo dos subtítulos */
+    padding-bottom: 0.5em;
+    text-align: center; /* Centraliza o subtítulo */
+}
+
+section h3 {
+    font-size: 1.8em;
+    color: #007bff; /* Cor dos subtítulos menores */
+    margin: 1.5em 0 0.5em; /* Margem ajustada para espaçamento */
+    text-align: center; /* Centraliza o subtítulo */
+}
+
+/* Estilo dos parágrafos */
+section p {
+    margin-bottom: 1.5em;
+    font-size: 1.2em; /* Aumenta o tamanho da fonte do texto */
+    line-height: 1.8; /* Melhora a legibilidade */
+    text-align: center; /* Centraliza o texto */
+}
+
+/* Estilo das imagens */
+section img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1em auto; /* Espaçamento em cima e embaixo da imagem */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para profundidade */
+}
+
+/* Estilo do iframe */
+section iframe {
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para profundidade */
+}
+
+/* Estilo do footer */
+footer {
+    background: #7ab4ff;
+    color: #000000;
+    text-align: center;
+    padding: 1em 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 2em;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2); /* Sombra para profundidade */
+}
+
+/* Adicionando um efeito suave para a rolagem */
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* Estilo das imagens dentro das seções */
+section img {
+    width: 100%; /* Ajusta a largura da imagem para 100% do contêiner */
+    max-width: 650px; /* Define uma largura máxima fixa menor para todas as imagens */
+    height: auto; /* Mantém a proporção da imagem */
+    display: block;
+    margin: 1.5em auto; /* Espaçamento em cima e embaixo da imagem e centraliza */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para profundidade */
+}
+
+/* Estilo específico para a imagem dos Lagos de Vuomajåhka */
+img[src="/assets/imagens/Lagos de VuomajåhkK.webp"] {
+    width: 100%; /* Ajusta a largura da imagem para 100% do contêiner */
+    max-width: 650px; /* Define uma largura máxima fixa menor */
+    height: auto; /* Mantém a proporção da imagem */
+    margin: 2em auto; /* Centraliza a imagem e adiciona mais espaço acima e abaixo */
+}
+
+
+
+
+
